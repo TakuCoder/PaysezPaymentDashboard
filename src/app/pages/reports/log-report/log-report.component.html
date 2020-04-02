@@ -1,0 +1,57 @@
+<div class="container">
+	<div class="row">
+		<div class="col top-buffer">
+			<input nbInput placeholder="Start Date" [nbDatepicker]="formpicker">
+				<nb-datepicker #formpicker></nb-datepicker>
+			</div>
+			<div>
+				<input nbInput placeholder="End Date" [nbDatepicker]="formpicker1">
+					<nb-datepicker #formpicker1></nb-datepicker>
+				</div>
+				<div class="col top-buffer">
+					<nb-card-header>Merchant Currency</nb-card-header>
+					<nb-select selected="1">
+						<nb-option value="1">USD</nb-option>
+						<nb-option value="2">LKR</nb-option>
+						<nb-option value="3">INR</nb-option>
+					</nb-select>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col top-buffer">
+					<nb-card-header>Transacition Type</nb-card-header>
+					<nb-select selected="1">
+						<nb-option value="1">POS Sale</nb-option>
+						<nb-option value="2">POS Refund</nb-option>
+						<nb-option value="3">POS Cancel</nb-option>
+						<nb-option value="4">QR Sale</nb-option>
+						<nb-option value="5">Qr Refund</nb-option>
+						<nb-option value="6">Qr Cancel</nb-option>
+						<nb-option value="7">CBP Sale</nb-option>
+						<nb-option value="8">CBP Refund</nb-option>
+					</nb-select>
+				</div>
+				<div class="col top-buffer">
+					<nb-card-header>Merchants</nb-card-header>
+					<nb-select selected="1">
+						<nb-option value="1">Active</nb-option>
+						<nb-option value="2">In-Active</nb-option>
+					</nb-select>
+				</div>
+				<div class="col top-buffer">
+					<nb-card-header>Terminal ID</nb-card-header>
+					<nb-select selected="1">
+						<nb-option value="1">00000000</nb-option>
+						<nb-option value="2">111111</nb-option>
+					</nb-select>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col top-buffer">
+					<div class="buttons-row">
+						<button nbButton hero>
+          SUBMIT
+        </button>
+					</div>
+				</div>
+			</div>

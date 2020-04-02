@@ -1,0 +1,129 @@
+<div class="container">
+
+  <div class="row">
+     <div class="col"><label for="exampleInputEmail1"></label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+           placeholder="Merchant ID">
+     </div>
+     <div class="col"><label for="exampleInputEmail1"></label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+           placeholder="Merchant Name">
+     </div>
+     <div class="col"><label for="exampleInputEmail1"></label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+           placeholder="Merchant Address1">
+     </div>
+  </div>
+  <div class="row">
+     <div class="col"><label for="exampleInputEmail1"></label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+           placeholder="Merchant Address2">
+     </div>
+     <div class="col"><label for="exampleInputEmail1"></label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+           placeholder="Merchant City">
+     </div>
+     <div class="col"><label for="exampleInputEmail1"></label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+           placeholder="Merchant State">
+     </div>
+  </div>
+  <div class="row">
+     <div class="col"><label for="exampleInputEmail1"></label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+           placeholder="Merchant Country">
+     </div>
+     <div class="col"><label for="exampleInputEmail1"></label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+           placeholder="Merchant PostalCode">
+     </div>
+     <div class="col"><label for="exampleInputEmail1"></label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+           placeholder="Merchant Phone">
+     </div>
+  </div>
+  <div class="row">
+     <div class="col"><label for="exampleInputEmail1"></label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+           placeholder="Merchant Email">
+     </div>
+     <div class="col"><label for="exampleInputEmail1"></label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+           placeholder="Merchant MCC">
+     </div>
+     <div class="col"><label for="exampleInputEmail1"></label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+           placeholder="Merchant IFSC Code">
+     </div>
+     <!-- <div class="col"><label for="exampleInputEmail1"></label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+        [disabled]="true" placeholder="Merchant IFSC Code">
+        </div> -->
+  </div>
+  <div class="row">
+     <div class="col"><label for="exampleInputEmail1"></label>
+        <input type="email" [disabled]="false" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+           placeholder="Merchant Account No">
+     </div>
+     <div class="col"><label for="exampleInputEmail1"></label>
+        <input type="email" [disabled]="true" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+           placeholder="">
+     </div>
+     <div class="col"><label for="exampleInputEmail1"></label>
+        <input type="email" [disabled]="true" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+           placeholder="">
+     </div>
+  </div>
+  <div class="row">
+     <div class="col top-buffer">
+        <label for="exampleInputEmail1"></label>
+        <input nbInput
+           placeholder="Merchant Start Date"
+           [nbDatepicker]="formpicker">
+        <nb-datepicker #formpicker></nb-datepicker>
+     </div>
+     <div class="col top-buffer">
+        <nb-card-header>Merchant Currency</nb-card-header>
+        <nb-select selected="1">
+           <nb-option value="1">USD</nb-option>
+           <nb-option value="2">LKR</nb-option>
+        </nb-select>
+     </div>
+     <div class="col top-buffer">
+        <nb-card-header>Merchant Status</nb-card-header>
+        <nb-select selected="1">
+           <nb-option value="1">Active</nb-option>
+           <nb-option value="2">In-Active</nb-option>
+        </nb-select>
+     </div>
+  </div>
+
+
+
+
+  <div class="row">
+   <div class="col top-buffer">
+      <div>
+
+         <nb-card-header>Merchant Permission</nb-card-header>
+      </div>
+     
+      <div class="col top-buffer">
+         <nb-checkbox [value]="true">Purchase</nb-checkbox>
+         <nb-checkbox [value]="true">Cancel</nb-checkbox>
+         <nb-checkbox [value]="true">Query</nb-checkbox>
+         <nb-checkbox [value]="true">Refund</nb-checkbox>
+       </div>
+   </div>
+   
+</div>
+
+<div class="row">
+   <div class="col top-buffer">
+<div class="buttons-row">
+   <button nbButton hero>
+      SUBMIT
+   </button>
+</div>
+   </div>
+</div>
